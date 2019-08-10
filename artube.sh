@@ -10,7 +10,7 @@
 # var1
 texto=$(
 cat <<FECHA
- Tuberall .Pesquisa de videos do youtube via terminal.
+ Artube.sh .Pesquisa de videos do youtube via terminal.
  .================================. 
 FECHA
 )
