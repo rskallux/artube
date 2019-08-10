@@ -1,6 +1,11 @@
 #!/bin/bash
-#while true
-#do                                                                                                                          
+# artube
+# Pesquisa videos youtube
+# Autor: Reinaldo Skabello 
+# web: https://terminalclub.github.io/
+# Licença: GPL
+# Nova versão: 2019 01:24:22 BRT
+# --------------------------------------                                                                                                                          
 ############################
 # var1
 texto=$(
@@ -53,21 +58,13 @@ cat var.txt
 ################### Print referência dos videos 
 grep 'dir="ltr' all.html | sed 's/<[^>]*>//g' | sed 's/ - Duração:.*//g' > teste.txt
 clear
-#echo " Download more? (s/n)"
-#read CONFIRMA
-#case $CONFIRMA in 
-#    "n")
-#break;
-#esac
-#done
-clear
 echo -e "\033[0m======================Endereço dos videos======================="
 echo -e "\033[0;32m"
 cat canal.txt
-echo -e "\033[0m ==============Referência dos videos ===================="
+echo -e "\033[0m =====================Referência dos videos ===================="
 echo -e "\033[1;37m"
 cat teste.txt
-echo -e "\033[0m=========Use seu player favorito para assistir============="
+echo -e "\033[0m=================Use seu player favorito para assistir==========="
 sleep 2
 exit
  #...
@@ -82,7 +79,7 @@ exit
     ;;
 
     *)
-        echo  "Opção inválida."
+        echo  "====================."
     ;;
 esac		
 	done			
