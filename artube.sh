@@ -29,9 +29,9 @@ read vd ld ef rn np sk bl
 wget https://www.youtube.com/results?search_query=$vd+$ld+$ef+$rn+$np+$sk+$bl -O all.html                                                                                                                                                
 clear
 echo -e "\033[0;32mPesquisando"
-sleep 6
+sleep 10
 grep '<title>' all.html | sed 's/<[^>]*>//g' | sed 's/ - You.*//g' 
-sleep 6
+sleep 10
 #######################################################
 #Filtrando somente codigo watch -video -----------------------
 grep -R  "watch?v=*" all.html > var.txt
