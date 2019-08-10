@@ -48,7 +48,7 @@ sed -i '/><a/d' wat.txt
 #Contatenando codigo do link com emdereço youtube
 awk '{print "https://www.youtube.com/"$0}' wat.txt > canal.txt
 #######################################################
-echo "  Tuberall pesquisou "
+echo "  Artube pesquisou "
 #Contando quantidades de videos localizados
 sed -n '$=' wat.txt
 ####################################
