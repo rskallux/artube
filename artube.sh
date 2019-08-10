@@ -28,7 +28,7 @@ echo "V"
 read vd ld ef rn np sk bl                                                                                                                                                 
 wget https://www.youtube.com/results?search_query=$vd+$ld+$ef+$rn+$np+$sk+$bl -O all.html                                                                                                                                                
 clear
-echo -e "\033[0;32mPesquisando"
+echo -e "\033[0;32mPesquisando ......"
 sleep 10
 grep '<title>' all.html | sed 's/<[^>]*>//g' | sed 's/ - You.*//g' 
 sleep 10
@@ -54,7 +54,7 @@ sed -n '$=' wat.txt
 ####################################
 echo " Videos para voce assistir "
 sleep 3
-cat var.txt 
+cat var.txt > clin.txt
 ################### Print referência dos videos 
 grep 'dir="ltr' all.html | sed 's/<[^>]*>//g' | sed 's/ - Duração:.*//g' > teste.txt
 clear
