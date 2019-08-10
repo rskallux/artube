@@ -64,6 +64,8 @@ cat canal.txt
 echo -e "\033[0m =====================Referência dos videos ===================="
 echo -e "\033[1;37m"
 cat teste.txt
+######################### Limpando Diretório  
+rm -R all.html canal.txt clin.txt teste.txt var.txt wat.txt
 echo -e "\033[0m=================Use seu player favorito para assistir==========="
 sleep 2
 exit
