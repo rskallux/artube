@@ -10,3 +10,5 @@ cd artube
 chmod +x artube.sh
 <p align="center">
 ./artube.sh
+ <p align="center"> 
+  web :>  https://terminalclub.github.io/
