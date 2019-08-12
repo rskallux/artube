@@ -15,7 +15,7 @@ cat <<FECHA
 FECHA
 )
  
-# Imprimindo na telinha!
+# tela print!
 dialog --msgbox "$texto" 0 0
 ###########################
 clear
@@ -45,7 +45,7 @@ sed -i '/data/d' wat.txt
 #Excluindo caracteres ><a 
 sed -i '/><a/d' wat.txt 
 ########################################################
-#Contatenando codigo do link com emdereço youtube
+#Contatenando codigo do link com endereço youtube
 awk '{print "https://www.youtube.com/"$0}' wat.txt > canal.txt
 #######################################################
 echo "  Artube pesquisou "
