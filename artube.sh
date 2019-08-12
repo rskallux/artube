@@ -58,12 +58,12 @@ cat var.txt > clin.txt
 ################### Print referência dos videos 
 grep 'dir="ltr' all.html | sed 's/<[^>]*>//g' | sed 's/ - Duração:.*//g' > teste.txt
 clear
-echo -e "\033[0m======================Endereço dos videos======================="
+echo -e "\033[0m======================Nome dos videos===================================="
 echo -e "\033[0;32m"
-cat canal.txt
-echo -e "\033[0m =====================Referência dos videos ===================="
-echo -e "\033[1;37m"
 cat teste.txt
+echo -e "\033[0m =====================Endereço dos videos ==============================="
+echo -e "\033[1;37m"
+cat canal.txt
 ######################### Limpando Diretório  
 rm -R all.html canal.txt clin.txt teste.txt var.txt wat.txt
 echo -e "\033[0m=================Use seu player favorito para assistir==========="
